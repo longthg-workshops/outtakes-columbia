@@ -18,14 +18,14 @@ home = [ "HTML", "RSS", "JSON"]
   
 [Languages]
 [Languages.en]
-title = "Obsidan 24"
+title = "LongTHG"
 weight = 1
 languageName = "English"
 
 [[Languages.en.menu.shortcuts]]
 name = "<i class='fab fa-windows'></i> Blog Homepage"
 identifier = "Back En"
-url = "/"
+url = "https://longthg-workshops.github.io/outtakes-columbia"
 weight = 20
 
 [[Languages.en.menu.shortcuts]]
@@ -35,20 +35,20 @@ url = "https://github.com/LongKira-Obsidian24"
 weight = 21
 
 [Languages.vi]
-title = "Obsidian 24"
+title = "LongTHG"
 weight = 2
 languageName = "Tiếng Việt"
 
 [[Languages.vi.menu.shortcuts]]
 name = "<i class='fab fa-windows'></i>Trang chủ Blog"
 identifier = "GH Vi"
-url = "https://github.com/LongKira-Obsidian24"
+url = "https://longthg-workshops.github.io/outtakes-columbia/vi"
 weight = 20
 
 [[Languages.vi.menu.shortcuts]]
 name = "<i class='fab fa-github'></i> Xem mã nguồn website này"
 identifier = "Back Vi"
-url = "/vi"
+url = "https://github.com/LongKira-Obsidian24"
 weight = 21
 
 [markup.goldmark.renderer]

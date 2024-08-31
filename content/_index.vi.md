@@ -1,13 +1,14 @@
 ---
-title : "Một số workshop AWS"
+title : "AWS Workshops - Phát hiện và rút ra điều gì ?"
 date :  "`r Sys.Date()`" 
 weight : 1 
 chapter : false
 ---
 
-# Một số workshop AWS
+# AWS Workshops - Phát hiện và rút ra điều gì ?
 
-Đây là trang lưu trữ chưa chính thức nội dung của một số bài workshop AWS. Chọn các mục ở thanh bên trái trang web để xem các workshop theo các chủ đề.
+Trong quá trình thực hiện (và cả thực hiện lại, cũng như tạo ra) các bài workshop, tôi đã gặp một số tình huống đáng lưu ý. Nếu chỉ đơn giản cập nhật, sửa lại và thực hiện thì cũng được. Song, việc đúc kết các điểm đặc biệt và đáng lưu ý giống như một cách để ghi nhớ tốt hơn.
 
-Hiện tại trang này có các chủ đề sau:
- - 1. EKS - Dựa trên các workshop trên [eksworkshop.com](https://eksworkshop.com)
+Đây không phải một workshop tiêu chuẩn, và do vậy, giao diện và giọng văn sẽ khác, rất khác. Dù sao thì, chúng ta bắt đầu lật lại quá trình "nấu nướng - chế cháo" chứ nhỉ ?
+
+Cột bên trái sẽ giúp các bạn điều hướng nội dung. Hãy bắt đầu thôi !

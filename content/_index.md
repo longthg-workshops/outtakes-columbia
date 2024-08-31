@@ -1,9 +1,9 @@
 ---
-title : "Some AWS Workshops"
+title : "AWS Workshops - Outtake and Misc."
 date :  "`r Sys.Date()`" 
 weight : 1 
 chapter : false
 ---
-# Some AWS Workshops - Hosted by longthg-workshops
+# AWS Workshops - Outtake and Misc.
 
 ### Chuyển sang tiếng Việt để xem nội dung
