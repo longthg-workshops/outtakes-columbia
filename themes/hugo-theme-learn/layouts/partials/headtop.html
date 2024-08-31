@@ -1,0 +1,97 @@
+<nav id="topbar" class="{{if $.Site.Params.showVisitedLinks }}showVisitedLinks{{end}}">
+
+    {{ $currentNode := . }}
+    {{ $showvisitedlinks := .Site.Params.showVisitedLinks }}
+
+    <div id="header-wrapper" style="box-shadow: 0px 1px 9px 1px rgb(0, 0, 0);">
+        
+        {{/*  <div id="upper" style="display: grid; grid-template-columns: 270px 1fr 300px;">
+            <div id="navigation-buttons" style="display: grid; grid-template-columns: 1fr 1fr;">  */}}
+                    {{/*  <!-- Next prev page -->
+                    {{ $currentNode := . }}
+                    
+                    {{ template "menu-nextprev" dict "menu" .Site.Home "currentnode" $currentNode }}
+                    
+                    {{ define "menu-nextprev" }}
+                        {{$currentNode := .currentnode }}
+                        {{ if ne .menu.Params.hidden true}}
+                            {{if hasPrefix $currentNode.RelPermalink .menu.RelPermalink }}
+                                {{ $currentNode.Scratch.Set "NextPageOK" "OK" }}
+                                {{ $currentNode.Scratch.Set "prevPage" ($currentNode.Scratch.Get "prevPageTmp") }}
+                            {{else}}
+                                {{if eq ($currentNode.Scratch.Get "NextPageOK") "OK"}}
+                                    {{ $currentNode.Scratch.Set "NextPageOK" nil }}
+                                    {{ $currentNode.Scratch.Set "nextPage" .menu }}
+                                {{end}}
+                            {{end}}
+                            {{ $currentNode.Scratch.Set "prevPageTmp" .menu }}
+
+                                {{ $currentNode.Scratch.Set "pages" .menu.Pages }}
+                                {{ if .menu.IsHome}}
+                                    {{ $currentNode.Scratch.Set "pages" .menu.Sections }}
+                                {{ else if .menu.Sections}}
+                                    {{ $currentNode.Scratch.Set "pages" (.menu.Pages | union .menu.Sections) }}
+                                {{end}}
+                                {{ $pages := ($currentNode.Scratch.Get "pages") }}
+
+                                {{ range $pages.ByWeight  }}
+                                    {{ template "menu-nextprev" dict "menu" . "currentnode" $currentNode }}
+                                {{end}}
+                        {{ end }}
+                    {{ end }}
+                    <div id="nav-back"> 
+                    {{with ($.Scratch.Get "prevPage")}}
+                        <a class="nav nav-prev" href="{{.RelPermalink}}" title="{{.Title}}">
+                            <i class="fas fa-arrow-alt-circle-left" style="margin-top: 10%; position: relative; font-size: 2.5em;"></i>
+                        </a>
+                    {{ else }}
+                        <i class="fas fa-arrow-alt-circle-left" style="margin-top: 10%; position: relative; font-size: 2.5em;"> </i>
+                    {{end}}
+                    </div>
+
+                    <div id="nav-next"> 
+                    {{with ($.Scratch.Get "nextPage")}}
+                        <a class="nav nav-next" href="{{.RelPermalink}}" title="{{.Title}}">
+                            <i class="fas fa-arrow-alt-circle-right" style="margin-top: 10%; position: relative; font-size: 2.5em;"></i>
+                        </a>
+                    {{ else }}
+                        <i class="fas fa-arrow-alt-circle-right" style="margin-top: 10%; position: relative; font-size: 2.5em;"> </i>
+                    {{end}}
+                    </div>  */}}
+            {{/*  </div>
+
+            <div id="header">
+                {{ partial "logo.html" . }}
+            </div>
+
+            <div>
+
+            </div>
+        </div>  */}}
+        <div id="header" style="display: grid; grid-template-columns: 1fr 640px 1fr;">
+            <div></div>
+            <div id="upper" style="display: grid; grid-template-columns: 1fr 1fr; min-width: fit-content;">
+                <div id="obs24" style="min-width: fit-content;">
+                    <a id="logo" href="/" style="left: 65px">
+                        <img src="/images/head/white_windows.png" alt="Windows Flag" height="64px">
+                    </a>
+                </div>
+                <div id="aws" style="min-width: fit-content;">
+                    <a id="logo2" href="https://cloudjourney.awsstudygroup.com/">
+                        <img src="/images/head/AWS_Logo.png" alt="AWS Flag" height="48px" style="margin-top: 12px">
+                    </a>
+                </div>
+            </div>
+            <div></div>
+        </div>
+
+        <div id="lower" style="display: grid; grid-template-columns: 1fr 300px ;">
+            {{ partial "top-bar.html" . }}
+            {{if not .Site.Params.disableSearch}}
+            {{ partial "search.html" . }}
+            {{end}}
+        </div>
+        
+
+    </div>
+</nav>
